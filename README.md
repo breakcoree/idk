@@ -265,6 +265,6 @@ For questions and suggestions: [mail@gmail.com](mailto:mail@gmail.com)
 
 Project Status: ✅ Completed  
 Version: 1.3.5  
-Last Updated: December 2026  
+Last Updated: May 07 2026  
 API: fatality.win Lua (CS2)  
 Launch flag: `-insecure`
