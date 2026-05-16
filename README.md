@@ -5,8 +5,7 @@
 ![Game](https://img.shields.io/badge/Game-CS2-orange)
 ![Mode](https://img.shields.io/badge/Launch-Insecure%20only-yellow)
 
- <img src="[https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif](https://github.com/breakcoree/idk/blob/main/ezgif-8938751d8d1408ed.gif)
-"/>
+![POC](https://github.com/breakcoree/idk/blob/main/ezgif-8938751d8d1408ed.gif?raw=true)
 Navmesh-based walkbot with Auto-Queue and Auto-Team for the fatality.win CS2 Lua API. A\* pathfinding on custom `.txt` nav files, bhop/smooth-turn movement, Panorama JS matchmaking integration, and a full in-menu UI.
 
 ---
