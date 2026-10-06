@@ -1,0 +1,26 @@
+n = int(input("Введите порядок матрицы n: "))
+
+# Ввод матрицы
+A = []
+for i in range(n):
+    row = input(f"Строка {i+1} (через пробел): ").split()
+    for j in range(len(row)):
+        row[j] = float(row[j])
+    A.append(row)
+
+# Создание матрицы T
+T = []
+for i in range(n):
+    T.append([0] * n)
+
+# Транспонирование
+for i in range(n):
+    for j in range(n):
+        T[j][i] = A[i][j]
+
+# Вывод
+print("Транспонированная матрица:")
+for i in range(n):
+    for j in range(n):
+        print(T[i][j], end=' ')
+    print()
