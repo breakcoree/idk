@@ -1,0 +1,136 @@
+/* Базовые стили */
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #22263a;
+  --accent: #3b5bdb;
+  --accent-light: #e7ecff;
+  --border: #d5dbef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* Основной контейнер */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px 40px;
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(34, 38, 58, 0.1);
+}
+
+/* Заголовки */
+h1 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-size: 2.2rem;
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #364fc7;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #4c6ef5;
+  font-style: italic;
+}
+
+/* Списки */
+ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+li::marker {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Ссылка */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+/* Изображение */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border: 4px solid var(--accent-light);
+  border-radius: 10px;
+}
+
+/* Таблица */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+tr:nth-child(odd) td {
+  background-color: var(--accent-light);
+}
+
+tr:hover td {
+  background-color: #c5d0ff;
+}
+
+/* Подвал */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  main {
+    margin: 10px;
+    padding: 20px;
+  }
+  td {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
